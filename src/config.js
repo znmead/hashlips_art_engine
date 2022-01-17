@@ -2,14 +2,15 @@ const basePath = process.cwd();
 const { MODE } = require(`${basePath}/constants/blend_mode.js`);
 const { NETWORK } = require(`${basePath}/constants/network.js`);
 
-const network = NETWORK.eth;
+const network = NETWORK.deso;
 
 // General metadata for Ethereum
 const namePrefix = "Your Collection";
 const description = "Remember to replace this description";
 const baseUri = "ipfs://NewUriToReplace";
 
-const solanaMetadata = {
+// TODO: Update this to DESO metadata
+const desoMetadata = {
   symbol: "YC",
   seller_fee_basis_points: 1000, // Define how much % you want from secondary market sales 1000 = 10%
   external_url: "https://www.youtube.com/c/hashlipsnft",
@@ -116,7 +117,7 @@ module.exports = {
   text,
   namePrefix,
   network,
-  solanaMetadata,
+  desoMetadata,
   gif,
   preview_gif,
 };
